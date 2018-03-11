@@ -35,18 +35,11 @@ class ShortenURLForm extends React.Component<IShortenURLFormProps, IShortenURLFo
 
   onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = e.target;
-
-    if (!urlRegex().test(value)) {
-      this.setState({
-        isButtonDisabled: true,
-        url: value
-      });
-      return;
-    }
+    const isButtonDisabled = !urlRegex().test(value);
 
     this.setState({
-      isButtonDisabled: false,
-      url: value
+      url: value,
+      isButtonDisabled
     });
   }
 
