@@ -6,3 +6,5 @@ venv/
 node_modules
 package-lock.json
 mochi.bundle.js
+server.bundle.js
+dist/
