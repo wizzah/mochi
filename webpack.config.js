@@ -1,7 +1,12 @@
 const path = require('path');
 
+const entries = {
+  mochi: './client/index.tsx',
+  server: './server/index.ts'
+};
+
 module.exports = {
-  entry: './client/index.tsx',
+  entry: entries,
   module: {
     rules: [
       {
@@ -19,7 +24,9 @@ module.exports = {
     ]
   },
   output: {
-    filename: 'mochi.bundle.js',
-    path: path.resolve(__dirname, './')
-  }
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, './dist/')
+  },
+  target: 'node',
+  devtool: 'source-map'
 };
