@@ -1,7 +1,5 @@
 import * as React from 'react';
-
-// TODO: investigate why this doesn't work with ES6 import syntax
-const urlRegex = require('url-regex');
+import urlRegex from 'url-regex';
 
 interface IShortenURLFormProps {};
 interface IShortenURLFormState {
