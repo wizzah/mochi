@@ -1,0 +1,26 @@
+{
+  "name": "mochi",
+  "version": "0.0.1",
+  "description": "a simple url shortner",
+  "main": "index.js",
+  "devDependencies": {
+    "ts-loader": "^4.0.1",
+    "typescript": "^2.7.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./node_modules/webpack/bin/webpack.js --config ./client/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wizzah/mochi.git"
+  },
+  "author": "wizzah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wizzah/mochi/issues"
+  },
+  "homepage": "https://github.com/wizzah/mochi#readme"
+}
