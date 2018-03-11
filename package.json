@@ -22,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/wizzah/mochi/issues"
   },
-  "homepage": "https://github.com/wizzah/mochi#readme"
+  "homepage": "https://github.com/wizzah/mochi#readme",
+  "dependencies": {
+    "@types/react": "^16.0.40",
+    "@types/react-dom": "^16.0.4",
+    "@types/url-regex": "^4.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "url-regex": "^4.1.1"
+  }
 }

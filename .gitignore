@@ -3,7 +3,6 @@
 venv/
 
 # js ignores
-
 node_modules
 package-lock.json
-mochi.bundle.ts
+mochi.bundle.js

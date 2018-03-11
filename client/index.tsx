@@ -1,5 +1,8 @@
-const app = document.getElementById('app');
+import * as React from 'react';
+import { render } from 'react-dom';
+import ShortenURLPage from './pages/ShortenURLPage';
 
-if (app) {
-  app.innerText = "Hello World!";
-}
+render(
+  <ShortenURLPage />,
+  document.getElementById('app')
+);
