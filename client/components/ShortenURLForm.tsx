@@ -1,20 +1,20 @@
-import * as React from 'react';
-import urlRegex from 'url-regex';
+import * as React from "react";
+import urlRegex from "url-regex";
 
-interface IShortenURLFormProps {};
+interface IShortenURLFormProps { }
 interface IShortenURLFormState {
-  isButtonDisabled: boolean,
-  url: string,
+  isButtonDisabled: boolean;
+  url: string;
 }
 
 const inputStyles: React.CSSProperties = {
-  fontSize: '16px',
-  padding: '10px',
-  width: '50%'
+  fontSize: "16px",
+  padding: "10px",
+  width: "50%",
 };
 
 const buttonStyles: React.CSSProperties = {
-  height: '42px'
+  height: "42px",
 };
 
 class ShortenURLForm extends React.Component<IShortenURLFormProps, IShortenURLFormState> {
@@ -23,12 +23,12 @@ class ShortenURLForm extends React.Component<IShortenURLFormProps, IShortenURLFo
 
     this.state = {
       isButtonDisabled: true,
-      url: ""
+      url: "",
     };
   }
 
   onButtonClick = () => {
-    console.log('Shorten Url:', this.state.url);
+    console.log("Shorten Url:", this.state.url);
   }
 
   onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -37,12 +37,12 @@ class ShortenURLForm extends React.Component<IShortenURLFormProps, IShortenURLFo
 
     this.setState({
       url: value,
-      isButtonDisabled
+      isButtonDisabled,
     });
   }
 
   onInputKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === 'Enter' && !this.state.isButtonDisabled) {
+    if (e.key === "Enter" && !this.state.isButtonDisabled) {
       this.onButtonClick();
     }
   }

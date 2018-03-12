@@ -1,10 +1,10 @@
-import * as React from 'react';
-import BaseLayout from './BaseLayout';
-import ShortenURLForm from '../components/ShortenURLForm';
+import * as React from "react";
+import BaseLayout from "./BaseLayout";
+import ShortenURLForm from "../components/ShortenURLForm";
 
 const baseStylesMixin: React.CSSProperties = {
-  textAlign: 'center',
-  marginTop: '15%'
+  textAlign: "center",
+  marginTop: "15%",
 };
 
 export default () => {
