@@ -1,14 +1,14 @@
-import * as React from 'react';
+import * as React from "react";
 
 type ReactChildren = React.ReactElement<React.Component> | React.ReactElement<React.Component>[];
 
 interface IBaseLayoutProps {
-  children: ReactChildren,
-  mixinStyles?: React.CSSProperties
+  children: ReactChildren;
+  mixinStyles?: React.CSSProperties;
 }
 
 const baseLayoutStyles: React.CSSProperties = {
-  fontFamily: 'sans-serif'
+  fontFamily: "sans-serif",
 };
 
 export default (props: IBaseLayoutProps) => {
@@ -20,4 +20,4 @@ export default (props: IBaseLayoutProps) => {
       { props.children }
     </div>
   );
-}
+};
