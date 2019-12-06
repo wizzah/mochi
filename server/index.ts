@@ -18,7 +18,7 @@ MongoClient.connect("mongodb://localhost:27017/", function (_err, db) {
 });
 
 // Landing page
-app.get("/", function (_req: Request, res: Response) {
+app.get("/", (_req: Request, res: Response) => {
   res.sendFile(__dirname + "/index.html");
 });
 

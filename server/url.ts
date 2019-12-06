@@ -48,7 +48,7 @@ export const getOrCreateUrl = (url: string, dbo: Db, callback: (result: IUrl) =>
           url: url,
           shortenedUrl: "r/" + randomString,
         };
-        collection.insert(newDoc);
+        collection.insertOne(newDoc).then(() => { callback(newDoc) }, () => { callback(newDoc) });
         callback(newDoc);
       }
     });
